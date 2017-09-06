@@ -11,6 +11,8 @@
 <link rel="stylesheet" href="../css/ahnText.css">
 <link rel="stylesheet" href="../css/ahnButton.css">
 <link rel="stylesheet" href="../css/bootstrap.css">
+<script src="jquery-1.9.1.js"></script>
+<script src="jquery-ui.js"></script>
 <script src="js/bootstrap.js"></script>
 </head>
 <center>
@@ -55,17 +57,25 @@
 			</select>
 			</td>
 		</tr>
+		
 			<tr>
 			<th scope="row"><font color="red" size="2em">* </font>날짜</th>
-			<td><select id="date_select"><option selected>2017</option></select><b>&nbsp;년</b>
+			<div id="datepicker">
+			<td><input type= "date" name="start_date">
+				&nbsp;<b> - </b> &nbsp;
+				<input type="date" naem="end_date"
+			</td>
+			
+			<!-- <select id="date_select"><option selected>2017</option></select><b>&nbsp;년</b>
 							<select id="date_select"><option selected>08</option></select><b>&nbsp;월</b>			
 							<select id="date_select"><option selected>30</option></select><b>&nbsp;일</b>			
 							&nbsp;<b>~</b>&nbsp;
 							<select id="date_select"><option selected>2017</option></select><b>&nbsp;년</b>
 							<select id="date_select"><option selected>09</option></select><b>&nbsp;월</b>
 							<select id="date_select"><option selected>30</option></select><b>&nbsp;일</b>			
-							</td>
+							</td> -->
 			</tr>
+		</div>
 		<tr>
 			<th scope="row"><font color="red" size="2em">* </font>요일</th>
 			<td>
