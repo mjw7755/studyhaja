@@ -33,7 +33,7 @@
 			<th scope="row"><font color="red" size="2em">* </font>분류</th>
 			<td>
 			<!-- <label for="ex_select">1차 분류</label> -->
-			<select id="first_select">
+			<select id="first_select" name="first_kind">
 									<option selected>1차 분류</option> 
 									<option>취업</option> 
 									<option>어학</option> 
@@ -47,7 +47,7 @@
 									<option>고시</option>
 			</select>
 			&nbsp;
-			<select id="second_select">
+			<select id="second_select" name="second_kind">
 									<option selected>2차 분류</option> 
 									<option>취업</option> 
 									<option>어학</option> 
@@ -106,7 +106,7 @@
 		</tr>
 		<tr>
 			<th scope="row"><font color="red" size="2em">* </font>시/군/구</th>
-			<td><select id="place_select"><option selected>시</option>
+			<td><select id="place_select" name="f_place"><option selected>시</option>
 										  <option>서울</option>
 										  <option>성남</option>
 										  <option>안양</option>
