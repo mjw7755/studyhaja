@@ -13,7 +13,7 @@
 <div id= "top">
 	<a href="#"><img src = "../images/search.png" /></a>&nbsp;&nbsp;&nbsp;
 	<a href="#" >LOGIN</a>&nbsp;&nbsp;&nbsp;
-	<a href="#" >SIGN-UP</a>
+	<a href="signupForm.do" >SIGN-UP</a>
 </div>
 <div class="tpm">
 <ul id = "topMenu">

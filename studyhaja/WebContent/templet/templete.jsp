@@ -1,6 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
-<link rel="stylesheet" type="text/css" href="../css/goods.css" />
+<link rel="stylesheet" type="text/css" href="ram.css" />
 <%@ taglib prefix="c" uri="http://java.sun.com/jstl/core_rt" %>
 
 <!DOCTYPE>
@@ -13,7 +13,7 @@
 <div id= "top">
 	<a href="#"><img src = "../images/search.png" /></a>&nbsp;&nbsp;&nbsp;
 	<a href="#" >LOGIN</a>&nbsp;&nbsp;&nbsp;
-	<a href="#" >SIGN-UP</a>
+	<a href="signupForm.do" >SIGN-UP</a>
 </div>
 <div class="tpm">
 <ul id = "topMenu">
@@ -30,7 +30,7 @@
 </div>
 
 <div class="botton">
-	<jsp:include page="../module/bottom.jsp"  flush="false"/>
+	<jsp:include page="../jaewoong/module/bottom.jsp"  flush="false"/>
 </div>
 
 <div class="scroll">
