@@ -11,6 +11,8 @@
 <link rel="stylesheet" href="../css/ahnText.css">
 <link rel="stylesheet" href="../css/ahnButton.css">
 <link rel="stylesheet" href="../css/bootstrap.css">
+<script src="jquery-1.9.1.js"></script>
+<script src="jquery-ui.js"></script>
 <script src="js/bootstrap.js"></script>
 </head>
 <center>
@@ -31,7 +33,7 @@
 			<th scope="row"><font color="red" size="2em">* </font>분류</th>
 			<td>
 			<!-- <label for="ex_select">1차 분류</label> -->
-			<select id="first_select">
+			<select id="first_select" name="first_kind">
 									<option selected>1차 분류</option> 
 									<option>취업</option> 
 									<option>어학</option> 
@@ -45,7 +47,7 @@
 									<option>고시</option>
 			</select>
 			&nbsp;
-			<select id="second_select">
+			<select id="second_select" name="second_kind">
 									<option selected>2차 분류</option> 
 									<option>취업</option> 
 									<option>어학</option> 
@@ -55,17 +57,25 @@
 			</select>
 			</td>
 		</tr>
+		
 			<tr>
 			<th scope="row"><font color="red" size="2em">* </font>날짜</th>
-			<td><select id="date_select"><option selected>2017</option></select><b>&nbsp;년</b>
+			<div id="datepicker">
+			<td><input type= "date" name="start_date">
+				&nbsp;<b> - </b> &nbsp;
+				<input type="date" naem="end_date"
+			</td>
+			
+			<!-- <select id="date_select"><option selected>2017</option></select><b>&nbsp;년</b>
 							<select id="date_select"><option selected>08</option></select><b>&nbsp;월</b>			
 							<select id="date_select"><option selected>30</option></select><b>&nbsp;일</b>			
 							&nbsp;<b>~</b>&nbsp;
 							<select id="date_select"><option selected>2017</option></select><b>&nbsp;년</b>
 							<select id="date_select"><option selected>09</option></select><b>&nbsp;월</b>
 							<select id="date_select"><option selected>30</option></select><b>&nbsp;일</b>			
-							</td>
+							</td> -->
 			</tr>
+		</div>
 		<tr>
 			<th scope="row"><font color="red" size="2em">* </font>요일</th>
 			<td>
@@ -96,7 +106,7 @@
 		</tr>
 		<tr>
 			<th scope="row"><font color="red" size="2em">* </font>시/군/구</th>
-			<td><select id="place_select"><option selected>시</option>
+			<td><select id="place_select" name="f_place"><option selected>시</option>
 										  <option>서울</option>
 										  <option>성남</option>
 										  <option>안양</option>
